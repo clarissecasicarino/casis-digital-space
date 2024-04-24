@@ -13,7 +13,7 @@ export default function Home() {
         <hr className="h-0.5 bg-black w-96" />
         <div className="pb-4" />
         <div className="rounded-full bg-white px-2 w-14">
-          <p className="text-center">noun</p>
+          <p className="text-center text-slateBlue">noun</p>
         </div>
       </div>
     </main>

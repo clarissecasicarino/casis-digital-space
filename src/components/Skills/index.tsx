@@ -11,6 +11,7 @@ export default function Skills() {
     "Next.js",
     "AWS",
     "Tailwind CSS",
+    "Responsive design",
     "API Development",
     "Leadership",
     "Problem-Solving",

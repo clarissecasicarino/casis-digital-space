@@ -25,7 +25,7 @@ export default function Definition() {
           <blockquote className="p-2 my-1 border-s-4 border-gray-300">
             <p className="text-base italic leading-relaxed">
               With an immense love for poetry, she often finds solace in verses,
-              and her penchant for music shines through as as she plays
+              and her penchant for music shines through as she plays
               classical and worship pieces on the piano.
             </p>
           </blockquote>

@@ -24,7 +24,7 @@ export default function DevProjects() {
             Travel Agency website developed using Next.js, React, TypeScript,
             and Prismic CMS.
           </p>
-          <div className="transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <div className="transition-transform group-hover:translate-x-1 motion-reduce:transform-none flex justify-end items-center">
             <Image
               src={ArrowIcon}
               width={50}
@@ -48,7 +48,7 @@ export default function DevProjects() {
             A full stack e-commerce platform developed using MERN Stack
             (MongoDB, Express, React.js, Node.js).
           </p>
-          <div className="transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <div className="transition-transform group-hover:translate-x-1 motion-reduce:transform-none flex justify-end items-center">
             <Image
               src={ArrowIcon}
               width={50}

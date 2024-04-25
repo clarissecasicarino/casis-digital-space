@@ -20,7 +20,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="flex rounded-lg bg-white max-w-sm max-h-80 p-4 hover:bg-lavender py-4 px-6">
+    <div className="flex rounded-lg bg-white max-w-sm max-h-min p-4 hover:bg-lavender py-4 px-6">
       <div className="flex-col">
         <h1 className="text-slateBlue text-2xl pb-2 font-medium">Skills</h1>
         <div className="flex flex-wrap gap-x-1 gap-y-2">

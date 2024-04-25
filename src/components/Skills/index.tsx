@@ -9,6 +9,7 @@ export default function Skills() {
     "Flutter",
     "React Native",
     "Next.js",
+    "PHP",
     "AWS",
     "Tailwind CSS",
     "Responsive design",

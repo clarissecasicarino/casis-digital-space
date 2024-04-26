@@ -1,7 +1,10 @@
 export default function Skills() {
   const skills = [
     "Full Stack Development",
-    "React.js",
+    "AWS",
+    "MongoDB",
+    "Express",
+    "React",
     "Node.js",
     "TypeScript",
     "JavaScript",
@@ -10,7 +13,6 @@ export default function Skills() {
     "React Native",
     "Next.js",
     "PHP",
-    "AWS",
     "Tailwind CSS",
     "Responsive design",
     "API Development",

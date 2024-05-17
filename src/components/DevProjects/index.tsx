@@ -20,7 +20,7 @@ export default function DevProjects() {
             Mamma Mia Tours
           </h2>
           <p className="m-0 max-w-[50ch] text-sm">
-            A project aimed to highlight my improved frontend skills. This is a
+            A project aimed to highlight her improved frontend skills. This is a
             Travel Agency website developed using Next.js, React, TypeScript,
             and Prismic CMS.
           </p>

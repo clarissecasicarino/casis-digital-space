@@ -6,8 +6,8 @@ export default function Definition() {
           a person who loves learning and studying:
           <blockquote className="p-2 my-1 border-s-4 border-gray-300">
             <p className="text-base italic leading-relaxed">
-              I describe myself as a philomath, with a genuine love of learning
-              and a great passion for my chosen subjects.
+              She describes herself as a philomath, with a genuine love of learning
+              and a great passion for her chosen subjects.
             </p>
           </blockquote>
         </li>

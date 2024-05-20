@@ -17,6 +17,7 @@ const config: Config = {
         slateBlue: "#6665DD",
         frenchGray: "#C8C6D7",
         lavender: "#E6E5FF",
+        russianViolet: "#0B032D",
       },
     },
   },

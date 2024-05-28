@@ -48,7 +48,7 @@ export default function CV(): ReactElement {
       <div>
         <button
           onClick={handleEnglishCVDownload}
-          className="rounded-full bg-slateBlue px-4 py-1"
+          className="rounded-full bg-slateBlue px-4 py-1 hover:bg-russianViolet"
         >
           Download English CV
         </button>
@@ -57,7 +57,7 @@ export default function CV(): ReactElement {
       <div>
         <button
           onClick={handleFrenchCVDownload}
-          className="rounded-full bg-slateBlue px-4 py-1"
+          className="rounded-full bg-slateBlue px-4 py-1 hover:bg-russianViolet"
         >
           {"Télécharger CV Français"}
         </button>

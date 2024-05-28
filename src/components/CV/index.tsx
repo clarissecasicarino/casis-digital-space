@@ -1,61 +1,66 @@
 "use client";
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 import EnglishCV from "../../app/pdfs/carino-cv-e.pdf";
 import FrenchCV from "../../app/pdfs/carino-cv-f.pdf";
-import { pdfjs, Document, Page } from "react-pdf";
-import styles from "./styles.module.css";
+import { pdfjs } from "react-pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-export default function CV() {
-  const [numPages, setNumPages] = useState<number>();
-  const [pageNumber, setPageNumber] = useState<number>(1);
-  const [showEnglishCV, setShowEnglishCV] = useState<boolean>(false);
-  const [showFrenchCV, setShowFrenchCV] = useState<boolean>(false);
+export default function CV(): ReactElement {
 
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
-    setNumPages(numPages);
-  }
+  const handleEnglishCVDownload = async () => {
+    try {
+      const response = await fetch(EnglishCV);
+      const blob = await response.blob();
+      const pdfURL = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = pdfURL;
+      link.download = "Carino_English_CV.pdf"; // Specify the file name here
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(pdfURL);
+    } catch (error) {
+      console.error("Error downloading the PDF", error);
+    }
+  };
+
+  const handleFrenchCVDownload = async () => {
+    try {
+      const response = await fetch(FrenchCV);
+      const blob = await response.blob();
+      const pdfURL = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = pdfURL;
+      link.download = "Carino_French_CV.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(pdfURL);
+    } catch (error) {
+      console.error("Error downloading the PDF", error);
+    }
+  };
 
   return (
-    <div className="flex flex-col lg:flex-row justify-evenly lg:justify-around lg:space-x-4 text-white space-y-10 lg:space-y-0 items-center py-16">
+    <div className="flex flex-col lg:flex-row justify-evenly lg:justify-around lg:space-x-4 text-white space-y-10 lg:space-y-0 items-center py-10">
+      {/* ENGLISH CV */}
       <div>
         <button
-          onClick={() => setShowEnglishCV(!showEnglishCV)}
+          onClick={handleEnglishCVDownload}
           className="rounded-full bg-slateBlue px-4 py-1"
         >
-          {showEnglishCV ? "Hide English CV" : "Show English CV"}
+          Download English CV
         </button>
-        {showEnglishCV && (
-          <div className={`${styles["pdf-container"]}`}>
-            <Document file={EnglishCV} onLoadSuccess={onDocumentLoadSuccess}>
-              <Page
-                pageNumber={pageNumber}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-              />
-            </Document>
-          </div>
-        )}
       </div>
+      {/* FRENCH CV */}
       <div>
         <button
-          onClick={() => setShowFrenchCV(!showFrenchCV)}
+          onClick={handleFrenchCVDownload}
           className="rounded-full bg-slateBlue px-4 py-1"
         >
-          {showFrenchCV ? "Conceal French CV" : "Reveal French CV"}
+          {"Télécharger CV Français"}
         </button>
-        {showFrenchCV && (
-          <div className={`${styles["pdf-container"]}`}>
-            <Document file={FrenchCV} onLoadSuccess={onDocumentLoadSuccess}>
-              <Page
-                pageNumber={pageNumber}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-              />
-            </Document>
-          </div>
-        )}
       </div>
     </div>
   );

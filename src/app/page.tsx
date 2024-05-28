@@ -7,7 +7,7 @@ import HeartIcon from "../../public/assets/images/heart-50.png";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 
-const DynamicPdfViewer = dynamic(() => import("@/components/CV"), {
+const DynamicPDF = dynamic(() => import("@/components/CV"), {
   ssr: false,
 });
 
@@ -40,15 +40,13 @@ export default function Home() {
           </div>
           <Definition />
           <DevProjects />
+          <DynamicPDF />
         </div>
         <div className="flex flex-col space-y-8">
           <About />
           <Skills />
         </div>
       </main>
-      <div className="bg-frenchGray">
-        <DynamicPdfViewer />
-      </div>
       <Footer />
     </>
   );

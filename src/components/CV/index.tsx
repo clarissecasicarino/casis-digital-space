@@ -1,7 +1,7 @@
 "use client";
 import { ReactElement, useState } from "react";
-import EnglishCV from "../../app/pdfs/carino-cv-e.pdf";
-import FrenchCV from "../../app/pdfs/carino-cv-f.pdf";
+import EnglishCV from "../../app/pdfs/CARINO-CV-E-Final.pdf";
+import FrenchCV from "../../app/pdfs/CARINO-CV-F-Final.pdf";
 import { pdfjs } from "react-pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;

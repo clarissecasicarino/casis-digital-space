@@ -1,3 +1,5 @@
+"use client";
+
 import About from "@/components/About";
 import Definition from "@/components/Definition";
 import DevProjects from "@/components/DevProjects";
@@ -6,6 +8,7 @@ import Image from "next/image";
 import HeartIcon from "../../public/assets/images/heart-50.png";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
+import CalendlyBadgeWidget from "@/components/Calendly";
 
 const DynamicPDF = dynamic(() => import("@/components/CV"), {
   ssr: false,
@@ -45,6 +48,7 @@ export default function Home() {
         <div className="flex flex-col space-y-8">
           <About />
           <Skills />
+          <CalendlyBadgeWidget />
         </div>
       </main>
       <Footer />

@@ -1,7 +1,7 @@
 "use client";
 import { ReactElement, useState } from "react";
-import EnglishCV from "../../app/pdfs/Carino_EN_CV.pdf";
-import FrenchCV from "../../app/pdfs/CARINO-CV-FR.pdf";
+import EnglishCV from "../../app/pdfs/Carino_C_CV_EN.pdf";
+import FrenchCV from "../../app/pdfs/Carino_C_FR_CV.pdf";
 import { pdfjs } from "react-pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -15,7 +15,7 @@ export default function CV(): ReactElement {
       const pdfURL = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = pdfURL;
-      link.download = "Carino_English_CV.pdf"; // Specify the file name here
+      link.download = "Carino_EN_CV.pdf"; // Specify the file name here
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -32,7 +32,7 @@ export default function CV(): ReactElement {
       const pdfURL = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = pdfURL;
-      link.download = "Carino_French_CV.pdf";
+      link.download = "Carino_FR_CV.pdf"; // Specify the file name here
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

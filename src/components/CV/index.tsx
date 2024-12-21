@@ -1,6 +1,6 @@
 "use client";
 import { ReactElement, useState } from "react";
-import EnglishCV from "../../app/pdfs/Carino_CC_CV.pdf";
+import EnglishCV from "../../app/pdfs/Carino_CV_EN.pdf";
 import FrenchCV from "../../app/pdfs/Carino_C_FR_CV.pdf";
 import { pdfjs } from "react-pdf";
 

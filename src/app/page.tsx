@@ -34,7 +34,7 @@ export default function Home() {
             </span>
           </section>
           <p className="text-slateBlue pb-3 text-lg">
-            {"["} kla-ris kah-see {"]"}
+            {"["} kla-riz kah-see {"]"}
           </p>
           <hr className="my-2 border-black w-full" />
           <div className="pb-2" />

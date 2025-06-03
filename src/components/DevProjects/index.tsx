@@ -19,7 +19,7 @@ export default function DevProjects() {
           <h2 className="mb-3 text-2xl font-semibold text-slateBlue">
             Mamma Mia Tours
           </h2>
-          <p className="m-0 max-w-[50ch] text-sm">
+          <p className="m-0 max-w-[50ch] text-sm text-black">
             A project aimed to highlight her improved frontend skills. This is a
             Travel Agency website developed using Next.js, React, TypeScript,
             and Prismic CMS.
@@ -44,7 +44,7 @@ export default function DevProjects() {
           <h2 className="mb-3 text-2xl font-semibold text-slateBlue">
             Emporium Shopping Website
           </h2>
-          <p className="m-0 max-w-[50ch] text-sm">
+          <p className="m-0 max-w-[50ch] text-sm text-black">
             A full stack e-commerce platform developed using MERN Stack
             (MongoDB, Express, React.js, Node.js).
           </p>

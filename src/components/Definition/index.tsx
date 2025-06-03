@@ -1,6 +1,6 @@
 export default function Definition() {
   return (
-    <div className="px-6 pt-4">
+    <div className="px-6 pt-4 text-black">
       <ol className="list-decimal text-lg">
         <li className="pb-4">
           a person who loves learning and studying:
